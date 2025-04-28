@@ -1,0 +1,106 @@
+/* profile.component.css - Estilo premium y lujoso */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.profile-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efecto hover */
+.profile-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+/* Títulos */
+.profile-container h2 {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #ffcc00;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Etiquetas */
+.profile-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Inputs */
+.profile-container input[type="text"],
+.profile-container input[type="number"] {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo en foco */
+.profile-container input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+}
+
+/* Resultados */
+.profile-container h3 {
+  margin-top: 35px;
+  font-size: 2em;
+  color: #ffcc00;
+  font-weight: 700;
+  text-align: center;
+}
+
+.profile-container p {
+  font-size: 1.2em;
+  margin: 15px 0;
+  color: #bbb;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Botones */
+button {
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #121212;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff9900, #ff6600);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 153, 0, 0.5);
+}

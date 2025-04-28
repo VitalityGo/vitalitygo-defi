@@ -1,0 +1,41 @@
+<!-- missions.component.html -->
+<div class="missions-container">
+    <h2>Misiones</h2>
+  
+    
+  
+    <h3>Misiones Diarias</h3>
+    
+    <br>
+  
+    <ul>
+      <li *ngFor="let mission of dailyMissions">
+        <input type="checkbox" [(ngModel)]="mission.completed" />
+        <span [class.completed]="mission.completed">{{ mission.title }}</span>
+      </li>
+    </ul>
+  
+    <br>
+    <h3>Misiones Semanales</h3>
+    <br>
+    <ul>
+      <li *ngFor="let mission of weeklyMissions">
+        <input type="checkbox" [(ngModel)]="mission.completed" />
+        <span [class.completed]="mission.completed">{{ mission.title }}</span>
+      </li>
+    </ul>
+  
+    <br>
+    <h3>Misiones Especiales</h3>
+    <br>
+    <ul>
+      <li *ngFor="let mission of especialMissions">
+        <input type="checkbox" [(ngModel)]="mission.completed" />
+        <span [class.completed]="mission.completed">{{ mission.title }}</span>
+      </li>
+    </ul>
+  
+    <!-- Mapa -->
+    <div id="map" style="height: 400px; width: 100%;"></div>
+  </div>
+  

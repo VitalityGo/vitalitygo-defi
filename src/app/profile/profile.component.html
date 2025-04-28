@@ -1,0 +1,23 @@
+<div class="profile-container">
+    <h2>Perfil</h2>
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="name" />
+  
+    <label>Peso (kg):</label>
+    <input type="number" [(ngModel)]="weight" />
+  
+    <label>Edad:</label>
+    <input type="number" [(ngModel)]="age" />
+  
+    <label>Altura (cm):</label>
+    <input type="number" [(ngModel)]="height" />
+  
+    <h3>Resultados</h3>
+    <p>IMC: {{ bmi | number:'1.1-1' }}</p> <!-- Correctamente usa el pipe 'number' -->
+  
+    <p>Calorías diarias necesarias: {{ calculateDailyCalories() | number }} kcal</p> <!-- Calorías calculadas -->
+  
+    <!-- Botón para recalcular IMC -->
+    <button (click)="calculateBMI()">Calcular IMC</button>
+  </div>
+  
