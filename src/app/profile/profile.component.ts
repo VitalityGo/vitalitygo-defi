@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ImcService } from '../imc.service';
-import { DataService } from '../data.service';
+import { ImcService } from '../services/imc.service';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-profile',

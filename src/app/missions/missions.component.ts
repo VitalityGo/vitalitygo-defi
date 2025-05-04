@@ -2,7 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ImcService } from '../imc.service';
+import { ImcService } from '../services/imc.service';
 
 interface Mission {
   title: string;
